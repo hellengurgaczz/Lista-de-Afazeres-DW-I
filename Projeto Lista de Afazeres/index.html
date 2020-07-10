@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Tarefas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.minty.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" id="titulo">Lista de Tarefas</div>
+        </div>
+        <div class="row">
+            <div class="col-6" id="esquerda">
+                <input id="adicionarTarefa" type="txt" placeholder="Adicionar tarefa"><br><br>
+                <select name="select" class="select" id="selectAdd">
+                    <option value="addFaculdade">Faculdade</option>
+                    <option value="addDia">Dia a Dia</option>
+                </select><br><br>
+                <button id="adicionar" class="btn btn-info">Adicionar</button><br><br>
+                <h2 id="tarefasFaculdade"><strong>Faculdade</strong></h2>
+                <section id="sectionEsquerda"></section>
+            </div>
+            <div class="col-6" id="direita">
+                <input id="removerTarefa" type="txt" placeholder="Remover tarefa"><br><br>
+                <select name="select" class="select" id="selectRemover">
+                    <option value="removeFaculdade">Faculdade</option>
+                    <option value="removeDia">Dia a Dia</option>
+                </select><br><br>
+                <button id="remover"  class="btn btn-danger">Remover</button><br><br>
+                <h2 id="tarefasDia"><strong>Dia a Dia</strong></h2>
+                <section id="sectionDireita"></section>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
